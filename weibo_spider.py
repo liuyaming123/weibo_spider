@@ -143,7 +143,7 @@ if __name__ == '__main__':
         containerid = '107603' + oid
 
         # 日志路径
-        lf_comment = "{}/{}.log".format(log_file_path,time.strftime('comment_{}_%Y-%m-%d'.format(containerid+'-----'), time.localtime()))  # 评论日志路径
+        lf_comment = "{}/{}.log".format(log_file_path,time.strftime('comment_{}_%Y-%m-%d'.format(containerid), time.localtime()))  # 评论日志路径
         lf_error = "{}/{}.log".format(log_file_path, time.strftime('error_{}_%Y'.format('107603'), time.localtime()))
 
         # main
