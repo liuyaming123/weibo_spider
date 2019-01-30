@@ -13,13 +13,10 @@ import os
 
 
 # 导入配置文件
-conf_dir = os.sep.join(['conf','conf.json'])
-f = open(conf_dir, 'r')
-config = json.load(f)
+config = json.load(open(os.sep.join(['conf','conf.json']),'r'))
 
 # 日志文件地址
 log_file_path = "{}/logs/".format(config["logs_path"])
-
 
 
 class Weibo_Spider():
