@@ -1,5 +1,4 @@
 {
-"oss_img_path": "toutiaoImage",
 "mongodb_conn": {"name": "mongodb://db51.mmbang.me:27017"},
 "logs_path": "D://Weibo_logs"
 }
