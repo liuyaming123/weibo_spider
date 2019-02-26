@@ -1,4 +1,0 @@
-{
-"mongodb_conn": {"name": "mongodb://ttspider1-mongo.service.idc:27017,ttspider2-mongo.service.idc:27017,mongo_big_a31.host.idc:27017/?readPreference=primaryPreferred","port": 27017},
-"logs_path": "/home/sdb/weibo"
-}
