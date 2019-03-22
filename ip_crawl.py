@@ -5,10 +5,6 @@ import requests
 import json,os,time
 from pymongo import MongoClient
 
-'''
-免费西刺ip抓取
-'''
-
 # 导入配置文件
 config = json.load(open(os.sep.join(['conf','conf.json']), 'r'))
 conn = MongoClient(config["mongodb_conn"]["name"])
@@ -74,5 +70,5 @@ def get_proxies(index=1):
                             '$set': {'ip': ip.get('ip'),'port': ip.get('port'),'type': ip.get('type'), 'crawl_time': int(time.time())}}, upsert=True)
 
 if __name__ == '__main__':
-    for i in range(1,21):
+    for i in range(1,100):
         get_proxies(i)
